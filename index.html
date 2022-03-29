@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Ejemplo 1</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
 
 </head>
@@ -40,11 +39,20 @@
         data: {
             criterioDeBusqueda: '',
             //Aquí, en este array es donde tienen que agregar su información
-            personas:
-                [
-                    { nombre: 'Daniel', apellido: 'Sánchez', dni: 20442873, correo: 'danielsanchez68@hotmail.com' },
-                    //Agregar aquí nombre, apellido, dni y correo en formato objeto 
-                ]
+            personas: [{
+                    nombre: 'Daniel',
+                    apellido: 'Sánchez',
+                    dni: 20442873,
+                    correo: 'danielsanchez68@hotmail.com'
+                },
+                //Agregar aquí nombre, apellido, dni y correo en formato objeto 
+                {
+                    nombre: 'Malu',
+                    apellido: 'R',
+                    dni: 12345678,
+                    correo: '123@gmail.com'
+                }
+            ]
         },
         computed: {
             personasFiltradas() {
